@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables and Forms HW</title>
+</head>
+<body>
+    <header>
+        <h1>Pizza Ordering Form</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <h2>Select Pizza Size</h2>
+                <p>
+                    <label for="size">Pizza Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="">--Select Size--</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">XLarge</option>
+                    </select>
+                </p>
+
+                <h2>Select Sauce</h2>
+                <p>
+                    <input type="radio" id="marinara" name="sauce" value="marinara" required>
+                    <label for="marinara">Marinara</label><br>
+                    
+                    <input type="radio" id="ranch" name="sauce" value="ranch">
+                    <label for="ranch">Ranch</label><br>
+                    
+                    <input type="radio" id="nosauce" name="sauce" value="nosauce">
+                    <label for="nosauce">No Sauce</label>
+                </p>
+
+                <h2>Select Toppings</h2>
+                <p>
+                    <input type="checkbox" id="pep" name="topping" value="pepperoni">
+                    <label for="pep">Pepperoni</label>
+                    
+                    <input type="checkbox" id="saus" name="topping" value="sausage">
+                    <label for="saus">Sausage</label><br>
+
+                    <input type="checkbox" id="mush" name="topping" value="mushroom">
+                    <label for="mush">Mushroom</label>
+
+                    <input type="checkbox" id="ham" name="topping" value="ham">
+                    <label for="ham">Ham</label><br>
+
+                    <input type="checkbox" id="peppers" name="topping" value="peppers">
+                    <label for="peppers">Peppers</label>
+
+                    <input type="checkbox" id="onion" name="topping" value="onions">
+                    <label for="onion">Onions</label>
+                </p>
+
+                <h2>Additional Instructions</h2>
+                <p>
+                    <textarea id="instructions" name="instructions" placeholder="Add instructions"></textarea>
+                </p>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <p>List of My Favorite Games</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Developer</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sandfall Interactive</td>
+                        <td>Clair Obscur: Expedition 33</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Riot Games</td>
+                        <td>Valorant</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>League of Legends</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>Blizzard Entertainment</td>
+                        <td>Overwatch 2</td>
+                        <td>2022</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Count: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
