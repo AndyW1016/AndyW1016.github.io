@@ -1,0 +1,79 @@
+/* background color and main font */
+body {
+    background-color: rgb(157, 214, 233); 
+    font-family: "Times New Roman", Georgia, serif;
+    margin: 8px;
+}
+
+/* header sizes*/
+h1 {
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+h2 {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 2em;
+    border-bottom: none;
+}
+
+/* 2nd paragraph with green border*/
+#paragraph2 {
+    background-color: white;       
+    border: 5px solid green;       
+    width: 900px;                
+    padding: 20px 45px;                 
+    margin: 20px;                 
+    line-height: 1.5;              
+}
+
+/* forth and fifth blue paragraphs*/
+.blue {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px; 
+}
+
+/* ordered list 2 numbers*/
+ol {
+    list-style-type: decimal-leading-zero; /* Keeps the 01. format */
+    text-align: left;
+    font-size: 1.3em;    
+    padding-left: 40px
+}
+
+/* numbered list links*/
+ol li a {
+    color: rgb(6, 6, 184);
+    font-size: .8em;  
+}
+
+/* w3schools link*/
+p a {
+    color: rgb(202, 12, 12);
+}
+
+/* table stuff*/
+table {
+    border-collapse: collapse; 
+    width: 550px;              
+    background-color: white;   
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;   /* Thin black border for all cells */
+    padding: 8px;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+/* table header grey background + smaller padding*/
+th {
+    background-color: #bbbbbbd5;    
+    font-weight: bold;
+    text-align: center;      
+    padding: 0px;  
+}
