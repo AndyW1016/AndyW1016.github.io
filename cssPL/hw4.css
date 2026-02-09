@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+}
+
+/* jump menu sidebar*/
+#jumpMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    background-color: #d49e15; 
+    padding: 20px;
+    overflow-y: auto;
+}
+/* jump menu header */
+#jumpMenu h2 {
+    margin-top: 0;
+    font-size: 2.5em; 
+    color: black;
+    text-align: center;
+}
+/* article links */
+#jumpMenu a {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* red and blue header */
+header {
+    position: fixed;
+    top: 0;
+    left: 15%; 
+    width: 85%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* MyBlog.com*/
+header p {
+    background-color: red;
+    color: black;
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+/* black background bar*/
+header nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 3rem;           
+    padding: 0 4rem;     
+}
+
+/* blue buttons */
+header nav button {
+     background-color: blue;
+    color: white;
+    border: 2px solid rgba(8, 7, 7, 0.349);   
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    flex-grow: 1;
+
+}
+
+main {
+    margin-left: 15%; 
+    padding-top: 130px; 
+    padding-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 30px 0;
+    color: black;
+}
+
+/* articles  */
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap:0.5rem 5rem;
+}
+
+/* article text */
+article {
+    width: 300px; 
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+/* blue thank you box*/
+#thanks {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: #87CEEB; 
+    color: black;
+    padding: 30px 30px;
+    font-size: 2em;
+    margin: 0;
+    z-index: 1001;
+    border: 1px solid #000000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
