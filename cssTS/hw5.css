@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex; 
+}
+
+/* left nav bar*/
+nav#menuItems {
+    background-color: black;
+    position: fixed; 
+    width: 200px; 
+    min-height: 100vh; 
+    z-index: 1000;
+}
+
+/* blue nav buttons */
+#menuItems button {
+    display: block;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-top: 1px solid rgba(255, 255, 255, 0.644);
+}
+
+/* change color on hover*/
+#menuItems button:hover {
+    background-color: #00008b; 
+}
+
+/* jump menu for recent articles*/
+#jumpMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: goldenrod; 
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+/* links to articles */
+#jumpMenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #00008b; 
+}
+
+/* change color when hover*/
+#jumpMenu li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* only show jump menu on hover*/
+#recentArticles:hover + #jumpMenu, 
+#jumpMenu:hover {
+    max-height: 500px; 
+}
+
+main {
+    margin-left: 200px; 
+    width: calc(100% - 200px);
+}
+
+/* MyBlog.com*/
+header {
+    background-color: red;
+    color: black;
+    text-align: center;
+    padding: .75rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap:0.5rem 5rem;
+}
+
+/* article starts off light */
+article {
+    color: #bbb; 
+    transition: all 2s ease;
+    transform-origin: center top; 
+    width: 300px; 
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* header also starts light */
+article h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #bbb;
+    transition: color 2s ease;
+}
+
+/* darken and expand article */
+article:hover {
+    color: black;        
+    transform: scale(1.2); 
+    z-index: 10;         
+}
+
+article:hover h2 {
+    color: black;
+}
+
+/* only first letter is 36px and times new roman, not read more */
+article p:first-of-type::first-letter {
+    font-family: 'Times New Roman', serif;
+    font-size: 36px;
+}
+
+/* blue arrow next to read more */
+a[href="http://www.google.com"]::after {
+    content: url('arrow.png'); 
+    display: inline-block;
+}
+
+/* blue thank you box*/
+#thanks {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: #87CEEB; 
+    color: black;
+    padding: 20px 25px;
+    font-size: 2em;
+    margin: 0;
+    z-index: 1001;
+    border: 1px solid #000000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
