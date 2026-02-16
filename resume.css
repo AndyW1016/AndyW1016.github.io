@@ -1,0 +1,135 @@
+/* color stuff */
+:root {
+    --primary-color: #2c3e50; 
+    --accent-color: #3498db;  
+    --bg-color: #f4f4f9;      
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* name header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+/* linkedin link */
+header a {
+    color: var(--white);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+main {
+    padding: 20px 0;
+}
+
+/* white card backgrounds */
+section {
+    background: var(--white);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* main section headers with line */
+h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+/* subsection headers */
+h3 {
+    color: var(--primary-color);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+/* project images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 10px auto;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+/* img captions */
+figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+
+/* change layout for desktop to be more horizontal */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1000px; 
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;   
+        justify-content: center;
+        align-items: center;      
+        text-align: center;
+        padding: 1rem 40px;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+
+    /* place items more horizontal*/
+    .project-grid {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .project-grid figure {
+        flex: 1; 
+    }
+    .project-grid .description {
+        flex: 1; 
+        margin-top: 0;
+    }
+    .project-grid .description h3 {
+        font-size: 2rem; 
+        margin-top: 0;  
+    }
+}
